@@ -19,7 +19,7 @@
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.js"></script>
 </head>
 <body class="class-declaration">
-<script type="text/javascript">var data = {"i0":10,"i1":6,"i2":6,"i3":10,"i4":6};
+<script type="text/javascript">var data = {"i0":10,"i1":10,"i2":6,"i3":6,"i4":6,"i5":10,"i6":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -56,13 +56,13 @@ loadScripts(document, 'script');</script>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -106,6 +106,38 @@ extends java.lang.Object</pre>
 </section>
 <section class="summary">
 <ul class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<li class="blockList">
+<section class="fieldSummary"><a id="field.summary">
+<!--   -->
+</a>
+<h2>Field Summary</h2>
+<div class="memberSummary">
+<table>
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<thead>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colSecond" scope="col">Field</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../task/Task.html" title="class in com.ftc11392.sequoia.task">Task</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#defaultTask">defaultTask</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected org.firstinspires.ftc.robotcore.external.Telemetry</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#telemetry">telemetry</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</li>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <li class="blockList">
 <section class="constructorSummary"><a id="constructor.summary">
@@ -123,14 +155,13 @@ extends java.lang.Object</pre>
 </thead>
 <tbody>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(org.firstinspires.ftc.robotcore.external.Telemetry)">Subsystem</a></span>&#8203;(org.firstinspires.ftc.robotcore.external.Telemetry&nbsp;telemetry)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E()">Subsystem</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Instantiates a Subsystem with a DefaultTask</div>
 </td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(org.firstinspires.ftc.robotcore.external.Telemetry,com.ftc11392.sequoia.task.Task)">Subsystem</a></span>&#8203;(org.firstinspires.ftc.robotcore.external.Telemetry&nbsp;telemetry,
-<a href="../task/Task.html" title="class in com.ftc11392.sequoia.task">Task</a>&nbsp;defaultTask)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.ftc11392.sequoia.task.Task)">Subsystem</a></span>&#8203;(<a href="../task/Task.html" title="class in com.ftc11392.sequoia.task">Task</a>&nbsp;defaultTask)</code></th>
 <td class="colLast">
 <div class="block">Instantiates a Subsystem</div>
 </td>
@@ -159,30 +190,45 @@ extends java.lang.Object</pre>
 </thead>
 <tbody>
 <tr class="altColor" id="i0">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#assignTelemetry(org.firstinspires.ftc.robotcore.external.Telemetry)">assignTelemetry</a></span>&#8203;(org.firstinspires.ftc.robotcore.external.Telemetry&nbsp;telemetry)</code></th>
+<td class="colLast">
+<div class="block">Used internally in <a href="../task/Scheduler.html" title="class in com.ftc11392.sequoia.task"><code>Scheduler</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor" id="i1">
 <td class="colFirst"><code><a href="../task/Task.html" title="class in com.ftc11392.sequoia.task">Task</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDefaultTask()">getDefaultTask</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i1">
+<tr class="altColor" id="i2">
+<td class="colFirst"><code>abstract void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#initialize(com.qualcomm.robotcore.hardware.HardwareMap)">initialize</a></span>&#8203;(com.qualcomm.robotcore.hardware.HardwareMap&nbsp;hardwareMap)</code></th>
+<td class="colLast">
+<div class="block">Initialize hardware devices here (run during <code>OpMode</code>
+ <code>init()</code>).</div>
+</td>
+</tr>
+<tr class="rowColor" id="i3">
 <td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#initPeriodic()">initPeriodic</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Runs periodically in the <code>OpMode</code> init loop.</div>
 </td>
 </tr>
-<tr class="altColor" id="i2">
+<tr class="altColor" id="i4">
 <td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#runPeriodic()">runPeriodic</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Runs periodically in the <code>OpMode</code> run loop.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i3">
+<tr class="rowColor" id="i5">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDefaultTask(com.ftc11392.sequoia.task.Task)">setDefaultTask</a></span>&#8203;(<a href="../task/Task.html" title="class in com.ftc11392.sequoia.task">Task</a>&nbsp;defaultTask)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i4">
+<tr class="altColor" id="i6">
 <td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stop()">stop</a></span>()</code></th>
 <td class="colLast">
@@ -205,6 +251,28 @@ extends java.lang.Object</pre>
 </section>
 <section class="details">
 <ul class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<li class="blockList">
+<section class="fieldDetails"><a id="field.detail">
+<!--   -->
+</a>
+<h2>Field Details</h2>
+<ul class="blockList">
+<li class="blockList">
+<section class="detail">
+<h3><a id="telemetry">telemetry</a></h3>
+<div class="memberSignature"><span class="modifiers">protected</span>&nbsp;<span class="returnType">org.firstinspires.ftc.robotcore.external.Telemetry</span>&nbsp;<span class="memberName">telemetry</span></div>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="defaultTask">defaultTask</a></h3>
+<div class="memberSignature"><span class="modifiers">protected</span>&nbsp;<span class="returnType"><a href="../task/Task.html" title="class in com.ftc11392.sequoia.task">Task</a></span>&nbsp;<span class="memberName">defaultTask</span></div>
+</section>
+</li>
+</ul>
+</section>
+</li>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <li class="blockList">
 <section class="constructorDetails"><a id="constructor.detail">
@@ -214,28 +282,20 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <section class="detail">
-<h3><a id="&lt;init&gt;(org.firstinspires.ftc.robotcore.external.Telemetry,com.ftc11392.sequoia.task.Task)">Subsystem</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">Subsystem</span>&#8203;(<span class="arguments">org.firstinspires.ftc.robotcore.external.Telemetry&nbsp;telemetry,
-<a href="../task/Task.html" title="class in com.ftc11392.sequoia.task">Task</a>&nbsp;defaultTask)</span></div>
+<h3><a id="&lt;init&gt;(com.ftc11392.sequoia.task.Task)">Subsystem</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">Subsystem</span>&#8203;(<span class="arguments"><a href="../task/Task.html" title="class in com.ftc11392.sequoia.task">Task</a>&nbsp;defaultTask)</span></div>
 <div class="block">Instantiates a Subsystem</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>telemetry</code> - <code>Telemetry</code> from an <code>OpMode</code>
-                                   for the task to be able to send information to a Driver Station.</dd>
 <dd><code>defaultTask</code> - the default Task of the Subsystem</dd>
 </dl>
 </section>
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="&lt;init&gt;(org.firstinspires.ftc.robotcore.external.Telemetry)">Subsystem</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">Subsystem</span>&#8203;(<span class="arguments">org.firstinspires.ftc.robotcore.external.Telemetry&nbsp;telemetry)</span></div>
+<h3><a id="&lt;init&gt;()">Subsystem</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">Subsystem</span>()</div>
 <div class="block">Instantiates a Subsystem with a DefaultTask</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>telemetry</code> - <code>Telemetry</code> from an <code>OpMode</code>
-                                   for the task to be able to send information to a Driver Station.</dd>
-</dl>
 </section>
 </li>
 </ul>
@@ -248,6 +308,29 @@ extends java.lang.Object</pre>
 </a>
 <h2>Method Details</h2>
 <ul class="blockList">
+<li class="blockList">
+<section class="detail">
+<h3><a id="assignTelemetry(org.firstinspires.ftc.robotcore.external.Telemetry)">assignTelemetry</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">assignTelemetry</span>&#8203;(<span class="arguments">org.firstinspires.ftc.robotcore.external.Telemetry&nbsp;telemetry)</span></div>
+<div class="block">Used internally in <a href="../task/Scheduler.html" title="class in com.ftc11392.sequoia.task"><code>Scheduler</code></a>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>telemetry</code> - The <code>Telemetry</code> to be passed</dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="initialize(com.qualcomm.robotcore.hardware.HardwareMap)">initialize</a></h3>
+<div class="memberSignature"><span class="modifiers">public abstract</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">initialize</span>&#8203;(<span class="arguments">com.qualcomm.robotcore.hardware.HardwareMap&nbsp;hardwareMap)</span></div>
+<div class="block">Initialize hardware devices here (run during <code>OpMode</code>
+ <code>init()</code>).</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>hardwareMap</code> - the <code>HardwareMap</code> to be passed.</dd>
+</dl>
+</section>
+</li>
 <li class="blockList">
 <section class="detail">
 <h3><a id="runPeriodic()">runPeriodic</a></h3>
@@ -315,13 +398,13 @@ extends java.lang.Object</pre>
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>

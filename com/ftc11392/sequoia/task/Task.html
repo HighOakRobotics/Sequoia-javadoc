@@ -19,7 +19,7 @@
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.js"></script>
 </head>
 <body class="class-declaration">
-<script type="text/javascript">var data = {"i0":10,"i1":10,"i2":10,"i3":6,"i4":10,"i5":10,"i6":6,"i7":6,"i8":10,"i9":10};
+<script type="text/javascript">var data = {"i0":10,"i1":10,"i2":10,"i3":6,"i4":10,"i5":10,"i6":6,"i7":10,"i8":6,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -137,6 +137,11 @@ extends java.lang.Object</pre>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#subsystems">subsystems</a></span></code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected org.firstinspires.ftc.robotcore.external.Telemetry</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#telemetry">telemetry</a></span></code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -159,10 +164,8 @@ extends java.lang.Object</pre>
 </thead>
 <tbody>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(org.firstinspires.ftc.robotcore.external.Telemetry)">Task</a></span>&#8203;(org.firstinspires.ftc.robotcore.external.Telemetry&nbsp;telemetry)</code></th>
-<td class="colLast">
-<div class="block">Instantiates a Task.</div>
-</td>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E()">Task</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -229,18 +232,25 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr class="rowColor" id="i7">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTelemetry(org.firstinspires.ftc.robotcore.external.Telemetry)">setTelemetry</a></span>&#8203;(org.firstinspires.ftc.robotcore.external.Telemetry&nbsp;telemetry)</code></th>
+<td class="colLast">
+<div class="block">Sets the telemetry instance</div>
+</td>
+</tr>
+<tr class="altColor" id="i8">
 <td class="colFirst"><code>abstract void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#stop(boolean)">stop</a></span>&#8203;(boolean&nbsp;interrupted)</code></th>
 <td class="colLast">
 <div class="block">Performs the actions that a Task needs when stopping, usually cleanup actions.</div>
 </td>
 </tr>
-<tr class="altColor" id="i8">
+<tr class="rowColor" id="i9">
 <td class="colFirst"><code><a href="ParallelRaceBundle.html" title="class in com.ftc11392.sequoia.task">ParallelRaceBundle</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withTimeout(int)">withTimeout</a></span>&#8203;(int&nbsp;seconds)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i9">
+<tr class="altColor" id="i10">
 <td class="colFirst"><code><a href="ParallelRaceBundle.html" title="class in com.ftc11392.sequoia.task">ParallelRaceBundle</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#withTimeout(long,java.util.concurrent.TimeUnit)">withTimeout</a></span>&#8203;(long&nbsp;amount,
 java.util.concurrent.TimeUnit&nbsp;unit)</code></th>
@@ -276,6 +286,12 @@ java.util.concurrent.TimeUnit&nbsp;unit)</code></th>
 </li>
 <li class="blockList">
 <section class="detail">
+<h3><a id="telemetry">telemetry</a></h3>
+<div class="memberSignature"><span class="modifiers">protected</span>&nbsp;<span class="returnType">org.firstinspires.ftc.robotcore.external.Telemetry</span>&nbsp;<span class="memberName">telemetry</span></div>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
 <h3><a id="interruptible">interruptible</a></h3>
 <div class="memberSignature"><span class="modifiers">protected</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">interruptible</span></div>
 </section>
@@ -298,14 +314,8 @@ java.util.concurrent.TimeUnit&nbsp;unit)</code></th>
 <ul class="blockList">
 <li class="blockList">
 <section class="detail">
-<h3><a id="&lt;init&gt;(org.firstinspires.ftc.robotcore.external.Telemetry)">Task</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">Task</span>&#8203;(<span class="arguments">org.firstinspires.ftc.robotcore.external.Telemetry&nbsp;telemetry)</span></div>
-<div class="block">Instantiates a Task.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>telemetry</code> - <code>Telemetry</code> from an <code>OpMode</code>
-                                   for the task to be able to send information to a Driver Station.</dd>
-</dl>
+<h3><a id="&lt;init&gt;()">Task</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">Task</span>()</div>
 </section>
 </li>
 </ul>
@@ -357,6 +367,18 @@ java.util.concurrent.TimeUnit&nbsp;unit)</code></th>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>interrupted</code> - whether the Task has been interrupted or not</dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="setTelemetry(org.firstinspires.ftc.robotcore.external.Telemetry)">setTelemetry</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">setTelemetry</span>&#8203;(<span class="arguments">org.firstinspires.ftc.robotcore.external.Telemetry&nbsp;telemetry)</span></div>
+<div class="block">Sets the telemetry instance</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>telemetry</code> - <code>Telemetry</code> from an <code>OpMode</code>
+                  for the task to be able to send information to a Driver Station.</dd>
 </dl>
 </section>
 </li>

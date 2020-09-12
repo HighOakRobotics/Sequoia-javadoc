@@ -19,7 +19,7 @@
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.js"></script>
 </head>
 <body class="class-declaration">
-<script type="text/javascript">var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+<script type="text/javascript">var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -188,25 +188,32 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr class="rowColor" id="i7">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#initSubsystems(com.qualcomm.robotcore.hardware.HardwareMap)">initSubsystems</a></span>&#8203;(com.qualcomm.robotcore.hardware.HardwareMap&nbsp;hardwareMap)</code></th>
+<td class="colLast">
+<div class="block">Initializes all subsystem hardware.</div>
+</td>
+</tr>
+<tr class="altColor" id="i8">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#isScheduled(com.ftc11392.sequoia.task.Task...)">isScheduled</a></span>&#8203;(<a href="Task.html" title="class in com.ftc11392.sequoia.task">Task</a>...&nbsp;tasks)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i8">
+<tr class="rowColor" id="i9">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#loop(com.ftc11392.sequoia.util.OpModeState)">loop</a></span>&#8203;(<a href="../util/OpModeState.html" title="enum in com.ftc11392.sequoia.util">OpModeState</a>&nbsp;state)</code></th>
 <td class="colLast">
 <div class="block">Run this method regularly.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i9">
+<tr class="altColor" id="i10">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerSubsystem(com.ftc11392.sequoia.subsystem.Subsystem...)">registerSubsystem</a></span>&#8203;(<a href="../subsystem/Subsystem.html" title="class in com.ftc11392.sequoia.subsystem">Subsystem</a>...&nbsp;subsystems)</code></th>
 <td class="colLast">
 <div class="block">Adds the given subsystems (<a href="../subsystem/Subsystem.html" title="class in com.ftc11392.sequoia.subsystem"><code>Subsystem</code></a>) to the Scheduler.</div>
 </td>
 </tr>
-<tr class="altColor" id="i10">
+<tr class="rowColor" id="i11">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#schedule(com.ftc11392.sequoia.task.Task)">schedule</a></span>&#8203;(<a href="Task.html" title="class in com.ftc11392.sequoia.task">Task</a>&nbsp;task)</code></th>
 <td class="colLast">
@@ -260,6 +267,17 @@ extends java.lang.Object</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>telemetry</code> - a Telemetry object from <code>OpMode</code> that allows
                   the scheduler to send messages to the Driver Station</dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="initSubsystems(com.qualcomm.robotcore.hardware.HardwareMap)">initSubsystems</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">initSubsystems</span>&#8203;(<span class="arguments">com.qualcomm.robotcore.hardware.HardwareMap&nbsp;hardwareMap)</span></div>
+<div class="block">Initializes all subsystem hardware.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>hardwareMap</code> - The <code>HardwareMap</code> to be used for subsystem initialization.</dd>
 </dl>
 </section>
 </li>

@@ -117,7 +117,7 @@ extends <a href="TaskBundle.html" title="class in com.ftc11392.sequoia.task">Tas
 <h3>Fields inherited from class&nbsp;com.ftc11392.sequoia.task.<a href="Task.html" title="class in com.ftc11392.sequoia.task">Task</a></h3>
 <a id="fields.inherited.from.class.com.ftc11392.sequoia.task.Task">
 <!--   -->
-</a><code><a href="Task.html#interruptible">interruptible</a>, <a href="Task.html#running">running</a>, <a href="Task.html#subsystems">subsystems</a></code></div>
+</a><code><a href="Task.html#interruptible">interruptible</a>, <a href="Task.html#running">running</a>, <a href="Task.html#subsystems">subsystems</a>, <a href="Task.html#telemetry">telemetry</a></code></div>
 </section>
 </li>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -137,8 +137,7 @@ extends <a href="TaskBundle.html" title="class in com.ftc11392.sequoia.task">Tas
 </thead>
 <tbody>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(org.firstinspires.ftc.robotcore.external.Telemetry,com.ftc11392.sequoia.task.Task,com.ftc11392.sequoia.task.Task...)">ParallelDeadlineBundle</a></span>&#8203;(org.firstinspires.ftc.robotcore.external.Telemetry&nbsp;telemetry,
-<a href="Task.html" title="class in com.ftc11392.sequoia.task">Task</a>&nbsp;deadline,
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(com.ftc11392.sequoia.task.Task,com.ftc11392.sequoia.task.Task...)">ParallelDeadlineBundle</a></span>&#8203;(<a href="Task.html" title="class in com.ftc11392.sequoia.task">Task</a>&nbsp;deadline,
 <a href="Task.html" title="class in com.ftc11392.sequoia.task">Task</a>...&nbsp;tasks)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -204,12 +203,12 @@ extends <a href="TaskBundle.html" title="class in com.ftc11392.sequoia.task">Tas
 <h3>Methods inherited from class&nbsp;com.ftc11392.sequoia.task.<a href="TaskBundle.html" title="class in com.ftc11392.sequoia.task">TaskBundle</a></h3>
 <a id="methods.inherited.from.class.com.ftc11392.sequoia.task.TaskBundle">
 <!--   -->
-</a><code><a href="TaskBundle.html#clearBundledTasks()">clearBundledTasks</a>, <a href="TaskBundle.html#isBundled(com.ftc11392.sequoia.task.Task)">isBundled</a>, <a href="TaskBundle.html#removedBundledTask(com.ftc11392.sequoia.task.Task)">removedBundledTask</a>, <a href="TaskBundle.html#requireUnbundled(com.ftc11392.sequoia.task.Task...)">requireUnbundled</a>, <a href="TaskBundle.html#requireUnbundled(java.util.Collection)">requireUnbundled</a></code></div>
+</a><code><a href="TaskBundle.html#clearBundledTasks()">clearBundledTasks</a>, <a href="TaskBundle.html#isBundled(com.ftc11392.sequoia.task.Task)">isBundled</a>, <a href="TaskBundle.html#registerBundledTasks(com.ftc11392.sequoia.task.Task...)">registerBundledTasks</a>, <a href="TaskBundle.html#removedBundledTask(com.ftc11392.sequoia.task.Task)">removedBundledTask</a>, <a href="TaskBundle.html#requireUnbundled(com.ftc11392.sequoia.task.Task...)">requireUnbundled</a>, <a href="TaskBundle.html#requireUnbundled(java.util.Collection)">requireUnbundled</a></code></div>
 <div class="inheritedList">
 <h3>Methods inherited from class&nbsp;com.ftc11392.sequoia.task.<a href="Task.html" title="class in com.ftc11392.sequoia.task">Task</a></h3>
 <a id="methods.inherited.from.class.com.ftc11392.sequoia.task.Task">
 <!--   -->
-</a><code><a href="Task.html#addSubsystems(com.ftc11392.sequoia.subsystem.Subsystem...)">addSubsystems</a>, <a href="Task.html#getSubsystems()">getSubsystems</a>, <a href="Task.html#hasSubsystem(com.ftc11392.sequoia.subsystem.Subsystem)">hasSubsystem</a>, <a href="Task.html#isInterruptible()">isInterruptible</a>, <a href="Task.html#isRunning()">isRunning</a>, <a href="Task.html#withTimeout(int)">withTimeout</a>, <a href="Task.html#withTimeout(long,java.util.concurrent.TimeUnit)">withTimeout</a></code></div>
+</a><code><a href="Task.html#addSubsystems(com.ftc11392.sequoia.subsystem.Subsystem...)">addSubsystems</a>, <a href="Task.html#getSubsystems()">getSubsystems</a>, <a href="Task.html#hasSubsystem(com.ftc11392.sequoia.subsystem.Subsystem)">hasSubsystem</a>, <a href="Task.html#isInterruptible()">isInterruptible</a>, <a href="Task.html#isRunning()">isRunning</a>, <a href="Task.html#setTelemetry(org.firstinspires.ftc.robotcore.external.Telemetry)">setTelemetry</a>, <a href="Task.html#withTimeout(int)">withTimeout</a>, <a href="Task.html#withTimeout(long,java.util.concurrent.TimeUnit)">withTimeout</a></code></div>
 <div class="inheritedList">
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <a id="methods.inherited.from.class.java.lang.Object">
@@ -230,9 +229,8 @@ extends <a href="TaskBundle.html" title="class in com.ftc11392.sequoia.task">Tas
 <ul class="blockList">
 <li class="blockList">
 <section class="detail">
-<h3><a id="&lt;init&gt;(org.firstinspires.ftc.robotcore.external.Telemetry,com.ftc11392.sequoia.task.Task,com.ftc11392.sequoia.task.Task...)">ParallelDeadlineBundle</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">ParallelDeadlineBundle</span>&#8203;(<span class="arguments">org.firstinspires.ftc.robotcore.external.Telemetry&nbsp;telemetry,
-<a href="Task.html" title="class in com.ftc11392.sequoia.task">Task</a>&nbsp;deadline,
+<h3><a id="&lt;init&gt;(com.ftc11392.sequoia.task.Task,com.ftc11392.sequoia.task.Task...)">ParallelDeadlineBundle</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">ParallelDeadlineBundle</span>&#8203;(<span class="arguments"><a href="Task.html" title="class in com.ftc11392.sequoia.task">Task</a>&nbsp;deadline,
 <a href="Task.html" title="class in com.ftc11392.sequoia.task">Task</a>...&nbsp;tasks)</span></div>
 </section>
 </li>

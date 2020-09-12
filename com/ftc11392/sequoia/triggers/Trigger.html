@@ -19,7 +19,7 @@
 <script type="text/javascript" src="../../../../script-dir/jquery-ui.js"></script>
 </head>
 <body class="class-declaration">
-<script type="text/javascript">var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+<script type="text/javascript">var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -228,6 +228,13 @@ extends java.lang.Object</pre>
 <div class="block">Big boy method for consolidating all rising/falling/while logic.</div>
 </td>
 </tr>
+<tr class="altColor" id="i6">
+<td class="colFirst"><code><a href="Trigger.html" title="class in com.ftc11392.sequoia.triggers">Trigger</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#whileOn(com.ftc11392.sequoia.task.Task)">whileOn</a></span>&#8203;(<a href="../task/Task.html" title="class in com.ftc11392.sequoia.task">Task</a>&nbsp;task)</code></th>
+<td class="colLast">
+<div class="block">Schedules the task as soon as the input changes to on, and continues to attempt to schedule while it is.</div>
+</td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -346,6 +353,24 @@ extends java.lang.Object</pre>
  OFF to ON : Cancels task
  WHILE ON  : Nothing
  ON to OFF : Schedules task once</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>task</code> - The task to run.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>This trigger, for chaining method calls.</dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="whileOn(com.ftc11392.sequoia.task.Task)">whileOn</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType"><a href="Trigger.html" title="class in com.ftc11392.sequoia.triggers">Trigger</a></span>&nbsp;<span class="memberName">whileOn</span>&#8203;(<span class="arguments"><a href="../task/Task.html" title="class in com.ftc11392.sequoia.task">Task</a>&nbsp;task)</span></div>
+<div class="block">Schedules the task as soon as the input changes to on, and continues to attempt to schedule while it is. Cancels when off.
+ <p>
+ WHILE OFF : Nothing
+ OFF to ON : Schedules task
+ WHILE ON  : Schedules task
+ ON to OFF : Cancels task</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>task</code> - The task to run.</dd>

@@ -92,6 +92,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/TaskBundle.html#addTasks(com.ftc11392.sequoia.task.Task...)">addTasks(Task...)</a></span> - Method in class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/TaskBundle.html" title="class in com.ftc11392.sequoia.task">TaskBundle</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/subsystem/Subsystem.html#assignTelemetry(org.firstinspires.ftc.robotcore.external.Telemetry)">assignTelemetry(Telemetry)</a></span> - Method in class com.ftc11392.sequoia.subsystem.<a href="com/ftc11392/sequoia/subsystem/Subsystem.html" title="class in com.ftc11392.sequoia.subsystem">Subsystem</a></dt>
+<dd>
+<div class="block">Used internally in <a href="com/ftc11392/sequoia/task/Scheduler.html" title="class in com.ftc11392.sequoia.task"><code>Scheduler</code></a>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#aToggleButton()">aToggleButton()</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
 <dd>&nbsp;</dd>
 </dl>
@@ -158,7 +162,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">A <a href="com/ftc11392/sequoia/task/Task.html" title="class in com.ftc11392.sequoia.task"><code>Task</code></a> that schedules a Task based on the value a boolean.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/ConditionalTask.html#%3Cinit%3E(org.firstinspires.ftc.robotcore.external.Telemetry,com.ftc11392.sequoia.task.Task,com.ftc11392.sequoia.task.Task,java.util.function.BooleanSupplier)">ConditionalTask(Telemetry, Task, Task, BooleanSupplier)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/ConditionalTask.html" title="class in com.ftc11392.sequoia.task">ConditionalTask</a></dt>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/ConditionalTask.html#%3Cinit%3E(com.ftc11392.sequoia.task.Task,com.ftc11392.sequoia.task.Task,java.util.function.BooleanSupplier)">ConditionalTask(Task, Task, BooleanSupplier)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/ConditionalTask.html" title="class in com.ftc11392.sequoia.task">ConditionalTask</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/PIDFController.html#control(double,double)">control(double, double)</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/PIDFController.html" title="class in com.ftc11392.sequoia.util">PIDFController</a></dt>
 <dd>
@@ -174,6 +178,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h2 class="title">D</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/subsystem/Subsystem.html#defaultTask">defaultTask</a></span> - Variable in class com.ftc11392.sequoia.subsystem.<a href="com/ftc11392/sequoia/subsystem/Subsystem.html" title="class in com.ftc11392.sequoia.subsystem">Subsystem</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/ftc11392/sequoia/task/DefaultTask.html" title="class in com.ftc11392.sequoia.task"><span class="typeNameLink">DefaultTask</span></a> - Class in <a href="com/ftc11392/sequoia/task/package-summary.html">com.ftc11392.sequoia.task</a></dt>
 <dd>
 <div class="block">Usually the default <a href="com/ftc11392/sequoia/task/Task.html" title="class in com.ftc11392.sequoia.task"><code>Task</code></a> in a <a href="com/ftc11392/sequoia/subsystem/Subsystem.html" title="class in com.ftc11392.sequoia.subsystem"><code>Subsystem</code></a> that does not
@@ -227,6 +233,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h2 class="title">G</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/SequoiaOpMode.html#gamepad1H">gamepad1H</a></span> - Variable in class com.ftc11392.sequoia.<a href="com/ftc11392/sequoia/SequoiaOpMode.html" title="class in com.ftc11392.sequoia">SequoiaOpMode</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/SequoiaOpMode.html#gamepad2H">gamepad2H</a></span> - Variable in class com.ftc11392.sequoia.<a href="com/ftc11392/sequoia/SequoiaOpMode.html" title="class in com.ftc11392.sequoia">SequoiaOpMode</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util"><span class="typeNameLink">GamepadHandler</span></a> - Class in <a href="com/ftc11392/sequoia/util/package-summary.html">com.ftc11392.sequoia.util</a></dt>
 <dd>
 <div class="block">Provides <code>BooleanSupplier</code> objects for various gamepad buttons and triggers.</div>
@@ -321,11 +331,20 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/OpModeState.html#INIT_LOOP">INIT_LOOP</a></span> - com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/OpModeState.html" title="enum in com.ftc11392.sequoia.util">OpModeState</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/subsystem/Subsystem.html#initialize(com.qualcomm.robotcore.hardware.HardwareMap)">initialize(HardwareMap)</a></span> - Method in class com.ftc11392.sequoia.subsystem.<a href="com/ftc11392/sequoia/subsystem/Subsystem.html" title="class in com.ftc11392.sequoia.subsystem">Subsystem</a></dt>
+<dd>
+<div class="block">Initialize hardware devices here (run during <code>OpMode</code>
+ <code>init()</code>).</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/subsystem/PIDFSubsystem.html#initPeriodic()">initPeriodic()</a></span> - Method in class com.ftc11392.sequoia.subsystem.<a href="com/ftc11392/sequoia/subsystem/PIDFSubsystem.html" title="class in com.ftc11392.sequoia.subsystem">PIDFSubsystem</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/subsystem/Subsystem.html#initPeriodic()">initPeriodic()</a></span> - Method in class com.ftc11392.sequoia.subsystem.<a href="com/ftc11392/sequoia/subsystem/Subsystem.html" title="class in com.ftc11392.sequoia.subsystem">Subsystem</a></dt>
 <dd>
 <div class="block">Runs periodically in the <code>OpMode</code> init loop.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/Scheduler.html#initSubsystems(com.qualcomm.robotcore.hardware.HardwareMap)">initSubsystems(HardwareMap)</a></span> - Method in class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/Scheduler.html" title="class in com.ftc11392.sequoia.task">Scheduler</a></dt>
+<dd>
+<div class="block">Initializes all subsystem hardware.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/SequoiaOpMode.html#initTriggers()">initTriggers()</a></span> - Method in class com.ftc11392.sequoia.<a href="com/ftc11392/sequoia/SequoiaOpMode.html" title="class in com.ftc11392.sequoia">SequoiaOpMode</a></dt>
 <dd>
@@ -335,13 +354,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">Schedules the given Tasks (<a href="com/ftc11392/sequoia/task/Task.html" title="class in com.ftc11392.sequoia.task"><code>Task</code></a>).</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/InstantScheduleTask.html#%3Cinit%3E(org.firstinspires.ftc.robotcore.external.Telemetry,com.ftc11392.sequoia.task.Task...)">InstantScheduleTask(Telemetry, Task...)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/InstantScheduleTask.html" title="class in com.ftc11392.sequoia.task">InstantScheduleTask</a></dt>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/InstantScheduleTask.html#%3Cinit%3E(com.ftc11392.sequoia.task.Task...)">InstantScheduleTask(Task...)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/InstantScheduleTask.html" title="class in com.ftc11392.sequoia.task">InstantScheduleTask</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/ftc11392/sequoia/task/InstantTask.html" title="class in com.ftc11392.sequoia.task"><span class="typeNameLink">InstantTask</span></a> - Class in <a href="com/ftc11392/sequoia/task/package-summary.html">com.ftc11392.sequoia.task</a></dt>
 <dd>
 <div class="block">A <a href="com/ftc11392/sequoia/task/Task.html" title="class in com.ftc11392.sequoia.task"><code>Task</code></a> that will only initialize, running the given <code>Runnable</code>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/InstantTask.html#%3Cinit%3E(java.lang.Runnable,org.firstinspires.ftc.robotcore.external.Telemetry)">InstantTask(Runnable, Telemetry)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/InstantTask.html" title="class in com.ftc11392.sequoia.task">InstantTask</a></dt>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/InstantTask.html#%3Cinit%3E(java.lang.Runnable)">InstantTask(Runnable)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/InstantTask.html" title="class in com.ftc11392.sequoia.task">InstantTask</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/Task.html#interruptible">interruptible</a></span> - Variable in class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/Task.html" title="class in com.ftc11392.sequoia.task">Task</a></dt>
 <dd>&nbsp;</dd>
@@ -393,11 +412,29 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#leftButton()">leftButton()</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#leftStick()">leftStick()</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#leftStick(double)">leftStick(double)</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#leftStickButton()">leftStickButton()</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#leftStickToggleButton()">leftStickToggleButton()</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#leftStickButton(double)">leftStickButton(double)</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#leftStickButtonButton()">leftStickButtonButton()</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#leftStickButtonToggleButton()">leftStickButtonToggleButton()</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#leftStickToggleButton(double)">leftStickToggleButton(double)</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#leftStickX(double)">leftStickX(double)</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#leftStickXButton(double)">leftStickXButton(double)</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#leftStickXToggleButton(double)">leftStickXToggleButton(double)</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#leftStickY(double)">leftStickY(double)</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#leftStickYButton(double)">leftStickYButton(double)</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#leftStickYToggleButton(double)">leftStickYToggleButton(double)</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#leftToggleButton()">leftToggleButton()</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
 <dd>&nbsp;</dd>
@@ -485,25 +522,25 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">A <a href="com/ftc11392/sequoia/task/TaskBundle.html" title="class in com.ftc11392.sequoia.task"><code>TaskBundle</code></a> of a deadline <a href="com/ftc11392/sequoia/task/Task.html" title="class in com.ftc11392.sequoia.task"><code>Task</code></a> and other tasks.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/ParallelDeadlineBundle.html#%3Cinit%3E(org.firstinspires.ftc.robotcore.external.Telemetry,com.ftc11392.sequoia.task.Task,com.ftc11392.sequoia.task.Task...)">ParallelDeadlineBundle(Telemetry, Task, Task...)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/ParallelDeadlineBundle.html" title="class in com.ftc11392.sequoia.task">ParallelDeadlineBundle</a></dt>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/ParallelDeadlineBundle.html#%3Cinit%3E(com.ftc11392.sequoia.task.Task,com.ftc11392.sequoia.task.Task...)">ParallelDeadlineBundle(Task, Task...)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/ParallelDeadlineBundle.html" title="class in com.ftc11392.sequoia.task">ParallelDeadlineBundle</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/ftc11392/sequoia/task/ParallelRaceBundle.html" title="class in com.ftc11392.sequoia.task"><span class="typeNameLink">ParallelRaceBundle</span></a> - Class in <a href="com/ftc11392/sequoia/task/package-summary.html">com.ftc11392.sequoia.task</a></dt>
 <dd>
 <div class="block">A <a href="com/ftc11392/sequoia/task/TaskBundle.html" title="class in com.ftc11392.sequoia.task"><code>TaskBundle</code></a> that runs a bundle of tasks (<a href="com/ftc11392/sequoia/task/Task.html" title="class in com.ftc11392.sequoia.task"><code>Task</code></a>) in parallel.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/ParallelRaceBundle.html#%3Cinit%3E(org.firstinspires.ftc.robotcore.external.Telemetry,com.ftc11392.sequoia.task.Task...)">ParallelRaceBundle(Telemetry, Task...)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/ParallelRaceBundle.html" title="class in com.ftc11392.sequoia.task">ParallelRaceBundle</a></dt>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/ParallelRaceBundle.html#%3Cinit%3E(com.ftc11392.sequoia.task.Task...)">ParallelRaceBundle(Task...)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/ParallelRaceBundle.html" title="class in com.ftc11392.sequoia.task">ParallelRaceBundle</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/ftc11392/sequoia/task/ParallelTaskBundle.html" title="class in com.ftc11392.sequoia.task"><span class="typeNameLink">ParallelTaskBundle</span></a> - Class in <a href="com/ftc11392/sequoia/task/package-summary.html">com.ftc11392.sequoia.task</a></dt>
 <dd>
 <div class="block">A <a href="com/ftc11392/sequoia/task/TaskBundle.html" title="class in com.ftc11392.sequoia.task"><code>TaskBundle</code></a> that runs tasks (<a href="com/ftc11392/sequoia/task/Task.html" title="class in com.ftc11392.sequoia.task"><code>Task</code></a>) in parallel.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/ParallelTaskBundle.html#%3Cinit%3E(org.firstinspires.ftc.robotcore.external.Telemetry,com.ftc11392.sequoia.task.Task...)">ParallelTaskBundle(Telemetry, Task...)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/ParallelTaskBundle.html" title="class in com.ftc11392.sequoia.task">ParallelTaskBundle</a></dt>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/ParallelTaskBundle.html#%3Cinit%3E(com.ftc11392.sequoia.task.Task...)">ParallelTaskBundle(Task...)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/ParallelTaskBundle.html" title="class in com.ftc11392.sequoia.task">ParallelTaskBundle</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/ftc11392/sequoia/task/PerpetualTask.html" title="class in com.ftc11392.sequoia.task"><span class="typeNameLink">PerpetualTask</span></a> - Class in <a href="com/ftc11392/sequoia/task/package-summary.html">com.ftc11392.sequoia.task</a></dt>
 <dd>
 <div class="block">A <a href="com/ftc11392/sequoia/task/Task.html" title="class in com.ftc11392.sequoia.task"><code>Task</code></a> that prevents its given Task from stopping itself, only allowing it to be interrupted.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/PerpetualTask.html#%3Cinit%3E(org.firstinspires.ftc.robotcore.external.Telemetry,com.ftc11392.sequoia.task.Task)">PerpetualTask(Telemetry, Task)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/PerpetualTask.html" title="class in com.ftc11392.sequoia.task">PerpetualTask</a></dt>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/PerpetualTask.html#%3Cinit%3E(com.ftc11392.sequoia.task.Task)">PerpetualTask(Task)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/PerpetualTask.html" title="class in com.ftc11392.sequoia.task">PerpetualTask</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/ftc11392/sequoia/util/PIDFController.html" title="class in com.ftc11392.sequoia.util"><span class="typeNameLink">PIDFController</span></a> - Class in <a href="com/ftc11392/sequoia/util/package-summary.html">com.ftc11392.sequoia.util</a></dt>
 <dd>
@@ -527,23 +564,23 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">A <a href="com/ftc11392/sequoia/subsystem/Subsystem.html" title="class in com.ftc11392.sequoia.subsystem"><code>Subsystem</code></a> that uses a <a href="com/ftc11392/sequoia/util/PIDFController.html" title="class in com.ftc11392.sequoia.util"><code>PIDFController</code></a> to control itself.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/subsystem/PIDFSubsystem.html#%3Cinit%3E(com.ftc11392.sequoia.util.PIDFController,double,org.firstinspires.ftc.robotcore.external.Telemetry)">PIDFSubsystem(PIDFController, double, Telemetry)</a></span> - Constructor for class com.ftc11392.sequoia.subsystem.<a href="com/ftc11392/sequoia/subsystem/PIDFSubsystem.html" title="class in com.ftc11392.sequoia.subsystem">PIDFSubsystem</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/subsystem/PIDFSubsystem.html#%3Cinit%3E(com.ftc11392.sequoia.util.PIDFController,double,org.firstinspires.ftc.robotcore.external.Telemetry,com.ftc11392.sequoia.task.Task)">PIDFSubsystem(PIDFController, double, Telemetry, Task)</a></span> - Constructor for class com.ftc11392.sequoia.subsystem.<a href="com/ftc11392/sequoia/subsystem/PIDFSubsystem.html" title="class in com.ftc11392.sequoia.subsystem">PIDFSubsystem</a></dt>
-<dd>
-<div class="block">Instantiates a PIDFSubsystem.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/subsystem/PIDFSubsystem.html#%3Cinit%3E(com.ftc11392.sequoia.util.PIDFController,org.firstinspires.ftc.robotcore.external.Telemetry)">PIDFSubsystem(PIDFController, Telemetry)</a></span> - Constructor for class com.ftc11392.sequoia.subsystem.<a href="com/ftc11392/sequoia/subsystem/PIDFSubsystem.html" title="class in com.ftc11392.sequoia.subsystem">PIDFSubsystem</a></dt>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/subsystem/PIDFSubsystem.html#%3Cinit%3E(com.ftc11392.sequoia.util.PIDFController)">PIDFSubsystem(PIDFController)</a></span> - Constructor for class com.ftc11392.sequoia.subsystem.<a href="com/ftc11392/sequoia/subsystem/PIDFSubsystem.html" title="class in com.ftc11392.sequoia.subsystem">PIDFSubsystem</a></dt>
 <dd>
 <div class="block">Instantiates a PIDFSubsystem with an initial setpoint of 0.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/subsystem/PIDFSubsystem.html#%3Cinit%3E(com.ftc11392.sequoia.util.PIDFController,double)">PIDFSubsystem(PIDFController, double)</a></span> - Constructor for class com.ftc11392.sequoia.subsystem.<a href="com/ftc11392/sequoia/subsystem/PIDFSubsystem.html" title="class in com.ftc11392.sequoia.subsystem">PIDFSubsystem</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/subsystem/PIDFSubsystem.html#%3Cinit%3E(com.ftc11392.sequoia.util.PIDFController,double,com.ftc11392.sequoia.task.Task)">PIDFSubsystem(PIDFController, double, Task)</a></span> - Constructor for class com.ftc11392.sequoia.subsystem.<a href="com/ftc11392/sequoia/subsystem/PIDFSubsystem.html" title="class in com.ftc11392.sequoia.subsystem">PIDFSubsystem</a></dt>
+<dd>
+<div class="block">Instantiates a PIDFSubsystem.</div>
 </dd>
 <dt><a href="com/ftc11392/sequoia/task/PIDFTask.html" title="class in com.ftc11392.sequoia.task"><span class="typeNameLink">PIDFTask</span></a> - Class in <a href="com/ftc11392/sequoia/task/package-summary.html">com.ftc11392.sequoia.task</a></dt>
 <dd>
 <div class="block">A <a href="com/ftc11392/sequoia/task/Task.html" title="class in com.ftc11392.sequoia.task"><code>Task</code></a> that controls a <a href="com/ftc11392/sequoia/subsystem/Subsystem.html" title="class in com.ftc11392.sequoia.subsystem"><code>Subsystem</code></a> using a <a href="com/ftc11392/sequoia/util/PIDFController.html" title="class in com.ftc11392.sequoia.util"><code>PIDFController</code></a>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/PIDFTask.html#%3Cinit%3E(org.firstinspires.ftc.robotcore.external.Telemetry,com.ftc11392.sequoia.util.PIDFController,java.util.function.DoubleSupplier,double,java.util.function.DoubleConsumer,com.ftc11392.sequoia.subsystem.Subsystem...)">PIDFTask(Telemetry, PIDFController, DoubleSupplier, double, DoubleConsumer, Subsystem...)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/PIDFTask.html" title="class in com.ftc11392.sequoia.task">PIDFTask</a></dt>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/PIDFTask.html#%3Cinit%3E(com.ftc11392.sequoia.util.PIDFController,java.util.function.DoubleSupplier,double,java.util.function.DoubleConsumer,com.ftc11392.sequoia.subsystem.Subsystem...)">PIDFTask(PIDFController, DoubleSupplier, double, DoubleConsumer, Subsystem...)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/PIDFTask.html" title="class in com.ftc11392.sequoia.task">PIDFTask</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/PIDFTask.html#%3Cinit%3E(org.firstinspires.ftc.robotcore.external.Telemetry,com.ftc11392.sequoia.util.PIDFController,java.util.function.DoubleSupplier,java.util.function.DoubleSupplier,java.util.function.DoubleConsumer,com.ftc11392.sequoia.subsystem.Subsystem...)">PIDFTask(Telemetry, PIDFController, DoubleSupplier, DoubleSupplier, DoubleConsumer, Subsystem...)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/PIDFTask.html" title="class in com.ftc11392.sequoia.task">PIDFTask</a></dt>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/PIDFTask.html#%3Cinit%3E(com.ftc11392.sequoia.util.PIDFController,java.util.function.DoubleSupplier,java.util.function.DoubleSupplier,java.util.function.DoubleConsumer,com.ftc11392.sequoia.subsystem.Subsystem...)">PIDFTask(PIDFController, DoubleSupplier, DoubleSupplier, DoubleConsumer, Subsystem...)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/PIDFTask.html" title="class in com.ftc11392.sequoia.task">PIDFTask</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/triggers/ToggleTrigger.html#poll()">poll()</a></span> - Method in class com.ftc11392.sequoia.triggers.<a href="com/ftc11392/sequoia/triggers/ToggleTrigger.html" title="class in com.ftc11392.sequoia.triggers">ToggleTrigger</a></dt>
 <dd>
@@ -557,6 +594,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </a>
 <h2 class="title">R</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/TaskBundle.html#registerBundledTasks(com.ftc11392.sequoia.task.Task...)">registerBundledTasks(Task...)</a></span> - Static method in class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/TaskBundle.html" title="class in com.ftc11392.sequoia.task">TaskBundle</a></dt>
+<dd>
+<div class="block">Adds the given tasks (<a href="com/ftc11392/sequoia/task/Task.html" title="class in com.ftc11392.sequoia.task"><code>Task</code></a>) to the TaskBundle.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/Scheduler.html#registerSubsystem(com.ftc11392.sequoia.subsystem.Subsystem...)">registerSubsystem(Subsystem...)</a></span> - Method in class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/Scheduler.html" title="class in com.ftc11392.sequoia.task">Scheduler</a></dt>
 <dd>
 <div class="block">Adds the given subsystems (<a href="com/ftc11392/sequoia/subsystem/Subsystem.html" title="class in com.ftc11392.sequoia.subsystem"><code>Subsystem</code></a>) to the Scheduler.</div>
@@ -581,11 +622,29 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#rightButton()">rightButton()</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#rightStick()">rightStick()</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#rightStick(double)">rightStick(double)</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#rightStickButton()">rightStickButton()</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#rightStickToggleButton()">rightStickToggleButton()</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#rightStickButton(double)">rightStickButton(double)</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#rightStickButtonButton()">rightStickButtonButton()</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#rightStickButtonToggleButton()">rightStickButtonToggleButton()</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#rightStickToggleButton(double)">rightStickToggleButton(double)</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#rightStickX(double)">rightStickX(double)</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#rightStickXButton(double)">rightStickXButton(double)</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#rightStickXToggleButton(double)">rightStickXToggleButton(double)</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#rightStickY(double)">rightStickY(double)</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#rightStickYButton(double)">rightStickYButton(double)</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#rightStickYToggleButton(double)">rightStickYToggleButton(double)</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#rightToggleButton()">rightToggleButton()</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
 <dd>&nbsp;</dd>
@@ -619,7 +678,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">A <a href="com/ftc11392/sequoia/task/Task.html" title="class in com.ftc11392.sequoia.task"><code>Task</code></a> that runs a <code>Runnable</code> until interrupted.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/RunTask.html#%3Cinit%3E(org.firstinspires.ftc.robotcore.external.Telemetry,java.lang.Runnable,com.ftc11392.sequoia.subsystem.Subsystem)">RunTask(Telemetry, Runnable, Subsystem)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/RunTask.html" title="class in com.ftc11392.sequoia.task">RunTask</a></dt>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/RunTask.html#%3Cinit%3E(java.lang.Runnable,com.ftc11392.sequoia.subsystem.Subsystem)">RunTask(Runnable, Subsystem)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/RunTask.html" title="class in com.ftc11392.sequoia.task">RunTask</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/SequoiaOpMode.html#runTriggers()">runTriggers()</a></span> - Method in class com.ftc11392.sequoia.<a href="com/ftc11392/sequoia/SequoiaOpMode.html" title="class in com.ftc11392.sequoia">SequoiaOpMode</a></dt>
 <dd>
@@ -639,6 +698,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/triggers/Trigger.WhileBehavior.html#SCHEDULE">SCHEDULE</a></span> - com.ftc11392.sequoia.triggers.<a href="com/ftc11392/sequoia/triggers/Trigger.WhileBehavior.html" title="enum in com.ftc11392.sequoia.triggers">Trigger.WhileBehavior</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/SequoiaOpMode.html#scheduler">scheduler</a></span> - Variable in class com.ftc11392.sequoia.<a href="com/ftc11392/sequoia/SequoiaOpMode.html" title="class in com.ftc11392.sequoia">SequoiaOpMode</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/ftc11392/sequoia/task/Scheduler.html" title="class in com.ftc11392.sequoia.task"><span class="typeNameLink">Scheduler</span></a> - Class in <a href="com/ftc11392/sequoia/task/package-summary.html">com.ftc11392.sequoia.task</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/Scheduler.html#%3Cinit%3E()">Scheduler()</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/Scheduler.html" title="class in com.ftc11392.sequoia.task">Scheduler</a></dt>
@@ -647,13 +708,13 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">A <a href="com/ftc11392/sequoia/task/Task.html" title="class in com.ftc11392.sequoia.task"><code>Task</code></a> that schedules the given tasks on initialization.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/ScheduleTask.html#%3Cinit%3E(org.firstinspires.ftc.robotcore.external.Telemetry,com.ftc11392.sequoia.task.Task...)">ScheduleTask(Telemetry, Task...)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/ScheduleTask.html" title="class in com.ftc11392.sequoia.task">ScheduleTask</a></dt>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/ScheduleTask.html#%3Cinit%3E(com.ftc11392.sequoia.task.Task...)">ScheduleTask(Task...)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/ScheduleTask.html" title="class in com.ftc11392.sequoia.task">ScheduleTask</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/ftc11392/sequoia/task/SequentialTaskBundle.html" title="class in com.ftc11392.sequoia.task"><span class="typeNameLink">SequentialTaskBundle</span></a> - Class in <a href="com/ftc11392/sequoia/task/package-summary.html">com.ftc11392.sequoia.task</a></dt>
 <dd>
 <div class="block">A <a href="com/ftc11392/sequoia/task/Task.html" title="class in com.ftc11392.sequoia.task"><code>Task</code></a> that schedules the given tasks in sequence.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/SequentialTaskBundle.html#%3Cinit%3E(org.firstinspires.ftc.robotcore.external.Telemetry,com.ftc11392.sequoia.task.Task...)">SequentialTaskBundle(Telemetry, Task...)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/SequentialTaskBundle.html" title="class in com.ftc11392.sequoia.task">SequentialTaskBundle</a></dt>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/SequentialTaskBundle.html#%3Cinit%3E(com.ftc11392.sequoia.task.Task...)">SequentialTaskBundle(Task...)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/SequentialTaskBundle.html" title="class in com.ftc11392.sequoia.task">SequentialTaskBundle</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/ftc11392/sequoia/SequoiaOpMode.html" title="class in com.ftc11392.sequoia"><span class="typeNameLink">SequoiaOpMode</span></a> - Class in <a href="com/ftc11392/sequoia/package-summary.html">com.ftc11392.sequoia</a></dt>
 <dd>&nbsp;</dd>
@@ -665,6 +726,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/PIDFTask.html#setpoint">setpoint</a></span> - Variable in class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/PIDFTask.html" title="class in com.ftc11392.sequoia.task">PIDFTask</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/Task.html#setTelemetry(org.firstinspires.ftc.robotcore.external.Telemetry)">setTelemetry(Telemetry)</a></span> - Method in class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/Task.html" title="class in com.ftc11392.sequoia.task">Task</a></dt>
+<dd>
+<div class="block">Sets the telemetry instance</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/SequoiaOpMode.html#start()">start()</a></span> - Method in class com.ftc11392.sequoia.<a href="com/ftc11392/sequoia/SequoiaOpMode.html" title="class in com.ftc11392.sequoia">SequoiaOpMode</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/ftc11392/sequoia/task/StartEndTask.html" title="class in com.ftc11392.sequoia.task"><span class="typeNameLink">StartEndTask</span></a> - Class in <a href="com/ftc11392/sequoia/task/package-summary.html">com.ftc11392.sequoia.task</a></dt>
@@ -672,12 +737,18 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">A <a href="com/ftc11392/sequoia/task/Task.html" title="class in com.ftc11392.sequoia.task"><code>Task</code></a> that runs a <code>Runnable</code> once when it is initialized and another Runnable once
  when it is interrupted.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/StartEndTask.html#%3Cinit%3E(org.firstinspires.ftc.robotcore.external.Telemetry,java.lang.Runnable,java.lang.Runnable,com.ftc11392.sequoia.subsystem.Subsystem...)">StartEndTask(Telemetry, Runnable, Runnable, Subsystem...)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/StartEndTask.html" title="class in com.ftc11392.sequoia.task">StartEndTask</a></dt>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/StartEndTask.html#%3Cinit%3E(java.lang.Runnable,java.lang.Runnable,com.ftc11392.sequoia.subsystem.Subsystem...)">StartEndTask(Runnable, Runnable, Subsystem...)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/StartEndTask.html" title="class in com.ftc11392.sequoia.task">StartEndTask</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/Clock.html#startTiming()">startTiming()</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/Clock.html" title="class in com.ftc11392.sequoia.util">Clock</a></dt>
 <dd>
 <div class="block">Starts the clock.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#sticks(double)">sticks(double)</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#sticksButton(double)">sticksButton(double)</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/util/GamepadHandler.html#sticksToggleButton(double)">sticksToggleButton(double)</a></span> - Method in class com.ftc11392.sequoia.util.<a href="com/ftc11392/sequoia/util/GamepadHandler.html" title="class in com.ftc11392.sequoia.util">GamepadHandler</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/StartEndTask.html#stop">stop</a></span> - Variable in class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/StartEndTask.html" title="class in com.ftc11392.sequoia.task">StartEndTask</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/SequoiaOpMode.html#stop()">stop()</a></span> - Method in class com.ftc11392.sequoia.<a href="com/ftc11392/sequoia/SequoiaOpMode.html" title="class in com.ftc11392.sequoia">SequoiaOpMode</a></dt>
@@ -725,11 +796,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>
 <div class="block">An abstraction above hardware devices.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/subsystem/Subsystem.html#%3Cinit%3E(org.firstinspires.ftc.robotcore.external.Telemetry)">Subsystem(Telemetry)</a></span> - Constructor for class com.ftc11392.sequoia.subsystem.<a href="com/ftc11392/sequoia/subsystem/Subsystem.html" title="class in com.ftc11392.sequoia.subsystem">Subsystem</a></dt>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/subsystem/Subsystem.html#%3Cinit%3E()">Subsystem()</a></span> - Constructor for class com.ftc11392.sequoia.subsystem.<a href="com/ftc11392/sequoia/subsystem/Subsystem.html" title="class in com.ftc11392.sequoia.subsystem">Subsystem</a></dt>
 <dd>
 <div class="block">Instantiates a Subsystem with a DefaultTask</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/subsystem/Subsystem.html#%3Cinit%3E(org.firstinspires.ftc.robotcore.external.Telemetry,com.ftc11392.sequoia.task.Task)">Subsystem(Telemetry, Task)</a></span> - Constructor for class com.ftc11392.sequoia.subsystem.<a href="com/ftc11392/sequoia/subsystem/Subsystem.html" title="class in com.ftc11392.sequoia.subsystem">Subsystem</a></dt>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/subsystem/Subsystem.html#%3Cinit%3E(com.ftc11392.sequoia.task.Task)">Subsystem(Task)</a></span> - Constructor for class com.ftc11392.sequoia.subsystem.<a href="com/ftc11392/sequoia/subsystem/Subsystem.html" title="class in com.ftc11392.sequoia.subsystem">Subsystem</a></dt>
 <dd>
 <div class="block">Instantiates a Subsystem</div>
 </dd>
@@ -740,7 +811,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="block">A <a href="com/ftc11392/sequoia/task/Task.html" title="class in com.ftc11392.sequoia.task"><code>Task</code></a> that, given a selection of tasks, runs one of the tasks based on the given
  selector.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/SwitchTask.html#%3Cinit%3E(org.firstinspires.ftc.robotcore.external.Telemetry,java.util.Map,java.util.function.Supplier)">SwitchTask(Telemetry, Map&lt;Object, Task&gt;, Supplier&lt;Object&gt;)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/SwitchTask.html" title="class in com.ftc11392.sequoia.task">SwitchTask</a></dt>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/SwitchTask.html#%3Cinit%3E(java.util.Map,java.util.function.Supplier)">SwitchTask(Map&lt;Object, Task&gt;, Supplier&lt;Object&gt;)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/SwitchTask.html" title="class in com.ftc11392.sequoia.task">SwitchTask</a></dt>
 <dd>&nbsp;</dd>
 </dl>
 <a id="I:T">
@@ -752,13 +823,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dd>&nbsp;</dd>
 <dt><a href="com/ftc11392/sequoia/task/Task.html" title="class in com.ftc11392.sequoia.task"><span class="typeNameLink">Task</span></a> - Class in <a href="com/ftc11392/sequoia/task/package-summary.html">com.ftc11392.sequoia.task</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/Task.html#%3Cinit%3E(org.firstinspires.ftc.robotcore.external.Telemetry)">Task(Telemetry)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/Task.html" title="class in com.ftc11392.sequoia.task">Task</a></dt>
-<dd>
-<div class="block">Instantiates a Task.</div>
-</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/Task.html#%3Cinit%3E()">Task()</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/Task.html" title="class in com.ftc11392.sequoia.task">Task</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/ftc11392/sequoia/task/TaskBundle.html" title="class in com.ftc11392.sequoia.task"><span class="typeNameLink">TaskBundle</span></a> - Class in <a href="com/ftc11392/sequoia/task/package-summary.html">com.ftc11392.sequoia.task</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/TaskBundle.html#%3Cinit%3E(org.firstinspires.ftc.robotcore.external.Telemetry)">TaskBundle(Telemetry)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/TaskBundle.html" title="class in com.ftc11392.sequoia.task">TaskBundle</a></dt>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/TaskBundle.html#%3Cinit%3E()">TaskBundle()</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/TaskBundle.html" title="class in com.ftc11392.sequoia.task">TaskBundle</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/ftc11392/sequoia/task/TaskException.html" title="class in com.ftc11392.sequoia.task"><span class="typeNameLink">TaskException</span></a> - Exception in <a href="com/ftc11392/sequoia/task/package-summary.html">com.ftc11392.sequoia.task</a></dt>
 <dd>
@@ -767,6 +836,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/TaskException.html#%3Cinit%3E()">TaskException()</a></span> - Constructor for exception com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/TaskException.html" title="class in com.ftc11392.sequoia.task">TaskException</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/TaskException.html#%3Cinit%3E(java.lang.String)">TaskException(String)</a></span> - Constructor for exception com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/TaskException.html" title="class in com.ftc11392.sequoia.task">TaskException</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/subsystem/Subsystem.html#telemetry">telemetry</a></span> - Variable in class com.ftc11392.sequoia.subsystem.<a href="com/ftc11392/sequoia/subsystem/Subsystem.html" title="class in com.ftc11392.sequoia.subsystem">Subsystem</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/Task.html#telemetry">telemetry</a></span> - Variable in class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/Task.html" title="class in com.ftc11392.sequoia.task">Task</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/ftc11392/sequoia/triggers/ToggleButton.html" title="class in com.ftc11392.sequoia.triggers"><span class="typeNameLink">ToggleButton</span></a> - Class in <a href="com/ftc11392/sequoia/triggers/package-summary.html">com.ftc11392.sequoia.triggers</a></dt>
 <dd>&nbsp;</dd>
@@ -855,10 +928,14 @@ the order they are declared.</div>
 <dd>
 <div class="block">A <a href="com/ftc11392/sequoia/task/Task.html" title="class in com.ftc11392.sequoia.task"><code>Task</code></a> that does nothing but stop running after a given amount of time.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/WaitTask.html#%3Cinit%3E(int,org.firstinspires.ftc.robotcore.external.Telemetry)">WaitTask(int, Telemetry)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/WaitTask.html" title="class in com.ftc11392.sequoia.task">WaitTask</a></dt>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/WaitTask.html#%3Cinit%3E(int)">WaitTask(int)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/WaitTask.html" title="class in com.ftc11392.sequoia.task">WaitTask</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/WaitTask.html#%3Cinit%3E(long,java.util.concurrent.TimeUnit,org.firstinspires.ftc.robotcore.external.Telemetry)">WaitTask(long, TimeUnit, Telemetry)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/WaitTask.html" title="class in com.ftc11392.sequoia.task">WaitTask</a></dt>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/WaitTask.html#%3Cinit%3E(long,java.util.concurrent.TimeUnit)">WaitTask(long, TimeUnit)</a></span> - Constructor for class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/WaitTask.html" title="class in com.ftc11392.sequoia.task">WaitTask</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/triggers/Trigger.html#whileOn(com.ftc11392.sequoia.task.Task)">whileOn(Task)</a></span> - Method in class com.ftc11392.sequoia.triggers.<a href="com/ftc11392/sequoia/triggers/Trigger.html" title="class in com.ftc11392.sequoia.triggers">Trigger</a></dt>
+<dd>
+<div class="block">Schedules the task as soon as the input changes to on, and continues to attempt to schedule while it is.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/Task.html#withTimeout(int)">withTimeout(int)</a></span> - Method in class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/Task.html" title="class in com.ftc11392.sequoia.task">Task</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/ftc11392/sequoia/task/Task.html#withTimeout(long,java.util.concurrent.TimeUnit)">withTimeout(long, TimeUnit)</a></span> - Method in class com.ftc11392.sequoia.task.<a href="com/ftc11392/sequoia/task/Task.html" title="class in com.ftc11392.sequoia.task">Task</a></dt>

@@ -114,7 +114,7 @@ extends <a href="Task.html" title="class in com.ftc11392.sequoia.task">Task</a><
 <h3>Fields inherited from class&nbsp;com.ftc11392.sequoia.task.<a href="Task.html" title="class in com.ftc11392.sequoia.task">Task</a></h3>
 <a id="fields.inherited.from.class.com.ftc11392.sequoia.task.Task">
 <!--   -->
-</a><code><a href="Task.html#interruptible">interruptible</a>, <a href="Task.html#running">running</a>, <a href="Task.html#subsystems">subsystems</a></code></div>
+</a><code><a href="Task.html#interruptible">interruptible</a>, <a href="Task.html#running">running</a>, <a href="Task.html#subsystems">subsystems</a>, <a href="Task.html#telemetry">telemetry</a></code></div>
 </section>
 </li>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -134,14 +134,12 @@ extends <a href="Task.html" title="class in com.ftc11392.sequoia.task">Task</a><
 </thead>
 <tbody>
 <tr class="altColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(int,org.firstinspires.ftc.robotcore.external.Telemetry)">WaitTask</a></span>&#8203;(int&nbsp;seconds,
-org.firstinspires.ftc.robotcore.external.Telemetry&nbsp;telemetry)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(int)">WaitTask</a></span>&#8203;(int&nbsp;seconds)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(long,java.util.concurrent.TimeUnit,org.firstinspires.ftc.robotcore.external.Telemetry)">WaitTask</a></span>&#8203;(long&nbsp;amount,
-java.util.concurrent.TimeUnit&nbsp;unit,
-org.firstinspires.ftc.robotcore.external.Telemetry&nbsp;telemetry)</code></th>
+<th class="colConstructorName" scope="row"><code><span class="memberNameLink"><a href="#%3Cinit%3E(long,java.util.concurrent.TimeUnit)">WaitTask</a></span>&#8203;(long&nbsp;amount,
+java.util.concurrent.TimeUnit&nbsp;unit)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -196,7 +194,7 @@ org.firstinspires.ftc.robotcore.external.Telemetry&nbsp;telemetry)</code></th>
 <h3>Methods inherited from class&nbsp;com.ftc11392.sequoia.task.<a href="Task.html" title="class in com.ftc11392.sequoia.task">Task</a></h3>
 <a id="methods.inherited.from.class.com.ftc11392.sequoia.task.Task">
 <!--   -->
-</a><code><a href="Task.html#addSubsystems(com.ftc11392.sequoia.subsystem.Subsystem...)">addSubsystems</a>, <a href="Task.html#getSubsystems()">getSubsystems</a>, <a href="Task.html#hasSubsystem(com.ftc11392.sequoia.subsystem.Subsystem)">hasSubsystem</a>, <a href="Task.html#isInterruptible()">isInterruptible</a>, <a href="Task.html#isRunning()">isRunning</a>, <a href="Task.html#withTimeout(int)">withTimeout</a>, <a href="Task.html#withTimeout(long,java.util.concurrent.TimeUnit)">withTimeout</a></code></div>
+</a><code><a href="Task.html#addSubsystems(com.ftc11392.sequoia.subsystem.Subsystem...)">addSubsystems</a>, <a href="Task.html#getSubsystems()">getSubsystems</a>, <a href="Task.html#hasSubsystem(com.ftc11392.sequoia.subsystem.Subsystem)">hasSubsystem</a>, <a href="Task.html#isInterruptible()">isInterruptible</a>, <a href="Task.html#isRunning()">isRunning</a>, <a href="Task.html#setTelemetry(org.firstinspires.ftc.robotcore.external.Telemetry)">setTelemetry</a>, <a href="Task.html#withTimeout(int)">withTimeout</a>, <a href="Task.html#withTimeout(long,java.util.concurrent.TimeUnit)">withTimeout</a></code></div>
 <div class="inheritedList">
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <a id="methods.inherited.from.class.java.lang.Object">
@@ -217,17 +215,15 @@ org.firstinspires.ftc.robotcore.external.Telemetry&nbsp;telemetry)</code></th>
 <ul class="blockList">
 <li class="blockList">
 <section class="detail">
-<h3><a id="&lt;init&gt;(long,java.util.concurrent.TimeUnit,org.firstinspires.ftc.robotcore.external.Telemetry)">WaitTask</a></h3>
+<h3><a id="&lt;init&gt;(long,java.util.concurrent.TimeUnit)">WaitTask</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">WaitTask</span>&#8203;(<span class="arguments">long&nbsp;amount,
-java.util.concurrent.TimeUnit&nbsp;unit,
-org.firstinspires.ftc.robotcore.external.Telemetry&nbsp;telemetry)</span></div>
+java.util.concurrent.TimeUnit&nbsp;unit)</span></div>
 </section>
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="&lt;init&gt;(int,org.firstinspires.ftc.robotcore.external.Telemetry)">WaitTask</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">WaitTask</span>&#8203;(<span class="arguments">int&nbsp;seconds,
-org.firstinspires.ftc.robotcore.external.Telemetry&nbsp;telemetry)</span></div>
+<h3><a id="&lt;init&gt;(int)">WaitTask</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="memberName">WaitTask</span>&#8203;(<span class="arguments">int&nbsp;seconds)</span></div>
 </section>
 </li>
 </ul>
